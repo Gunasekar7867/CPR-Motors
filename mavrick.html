@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(41, 39, 39);
+            padding: 5px 5%;
+        }
+        .home{
+            /* width: 100%; */
+            /* width: 100%; */
+            /* background-color: rgb(9, 228, 199); */
+            color: white;
+            font-size: 35px;
+            /* padding: 5px 5%; */
+            line-height: 50px;
+        }
+        .home{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+        }
+        .color-img img{
+            height: 550px;
+            width: 550px;
+        }
+        .button{
+            margin-left: 240px;  
+        }
+        .text{
+            font-weight: 200;
+        }
+       button{
+        height: 30px;
+        width: 30px;
+        border-radius: 40%;
+        border: none;
+       }
+       .black{
+        background-color: black;
+       }
+       .gray{
+        background-color: gray;
+       }
+       h2{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+       }
+      table{
+        color: white;
+        font-size: 30px;
+        /* width: 500px; */
+        height: 70px;
+        border:  solid rgb(240, 221, 221);
+        /* width: 40px; */
+      }
+       th{
+        width: 500px;
+        height: 50px;
+        text-align: left;
+       }
+       td{
+        height: 50px;
+         width: 500px;
+       }
+       .img img{
+        display: flex;
+        height: 200px;
+        width: 350px;
+       }
+       .things-grid{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 10px;
+       justify-content: center;
+       /* padding: 5px 2%; */
+       
+       }
+       .things{
+      
+        
+          width: 350px;
+
+        border: 2px solid white;
+       }
+       /* .details p{
+        display: flex;
+        font-size: 20px;
+        color: white;
+       } */
+        p{
+            display: flex;
+            color: white;
+            font-size: 20px;
+        }
+        .gallery-text{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 800;
+
+        }
+        .gallery{
+            justify-content: center;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 5px;
+        }
+        .gallery-img img{
+            /* display: flex; */
+            height: 250px;
+            width: 290px;
+        }
+        .gallery-img img:hover{
+            transform: scale(1.1);
+        }
+       @media (max-width:500px){
+        .home{
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 0; */
+            font-size: 20px;
+        }
+        .color-img img{
+            height: 350px;
+            width: 350px;
+            /* font-size: 10px; */
+        }
+        .button{
+            margin-left: 150px;  
+        }
+        .things-grid{
+            display: flex;
+            flex-wrap: wrap;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="text">
+                <p>
+                    <h1>MAVRICK</h1>
+                    Engine Capacity : 400 CC<br>
+                    Mileage : 32kmpl<br>
+                    Transmission : 6 Speed manual<br>
+                    Kerb Weight : 191 kg<br>
+                    Fuel Tank Capacity : 13.5 litres<br>
+                    Seat Height : 803 mm<br>
+                    Price : 100<br>
+                    <button1 class="buy">Buy Now</button>
+                </p>
+                </div>
+                <div class="color-img">
+                    <img id="change" src="images/mavrickblack.png">
+                    <div class="button">
+                        <button class="black"></button>
+                        <button class="gray"></button>
+                    </div>
+                </div>
+    </div>
+    <h2 style="font-size: 50px;">Mavrick 440 Specifications</h2><br>
+         <center>
+        <table border="1" cellspacing="0">
+            <tr>
+                <th>Displacement</th>
+                <td>440 cc</td>
+            </tr>
+            <tr>
+                <th>Max Power</th>
+                <td>27 bhp @ 6000 rpm</td>
+            </tr>
+            <tr>
+                <th>Max Torque</th>
+                <td>36 Nm @ 4000 rpm</td>
+            </tr>
+            <tr>
+                <th>Mileage - Owner Reported</th>
+                <td>32 kmpl</td>
+            </tr>
+            <tr>
+                <th>Gear Shifting Pattern</th>
+                <td>1 Down 5 Up</td>
+            </tr>
+            <tr>
+                <th>Cylinders</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Cooling System</th>
+                <td>Air/Oil Cooled</td>
+            </tr>
+            <tr>
+                <th>Clutch</th>
+                <td>Assist And Slipper Clutch</td>
+            </tr>
+            <tr>
+                <th>Fuel Tank Capacity</th>
+                <td>13.5 litres</td>
+            </tr>
+            <tr>
+                <th>Reserve Fuel Capacity</th>
+                <td>2.7 litres</td>
+            </tr>
+            <tr>
+                <th>Emission Standard</th>
+                <td>BS6 Phase 2</td>
+            </tr>
+            <tr>
+                <th>Fuel Type</th>
+                <td>Petrol</td>
+            </tr>
+        </table>   
+        </center><br><br><br>
+        <h2 style="font-size: 50px;">3 Things to Know About Mavrick 440</h2>
+        <div class="things-grid">
+        <div class="things">
+            <div class="img">
+              <img src="images/mavrick-440-left-side-view.webp" alt="">
+            </div>
+            <div class="detalis">
+              <p>The strong low-end torque from this 440cc engine suits perfectly for in-city riding conditions</p>
+            </div>
+          </div>
+          <div class="things">
+            <div class="img">
+              <img src="images/mavrick-440-tft-instrument-cluster.webp" alt="">
+            </div>
+            <div class="detalis">
+              <p>The Bluetooth-integrated cluster suits well for someone who likes to use navigation a lot</p>
+            </div>
+          </div>
+          <div class="things">
+            <div class="img">
+              <img src="images/mavrick-440-engine-from-right.webp" alt="">
+            </div>
+            <div class="detalis">
+              <p>With its light chassis, Mavrick is a treat to use on every day basis</p>
+            </div>
+          </div>
+          </div><br><br><br><br><br>
+          <h1 class="gallery-text">GALLERY</h1>
+        <div class="gallery">
+           <div class="gallery-img"><img src="marvikc1.jpg"></div>
+           <div class="gallery-img"><img src="images/mav2.webp"></div>
+           <div class="gallery-img"><img src="images/mav3.webp"></div>
+           <div class="gallery-img"><img src="images/mav4.jpeg"></div>
+           <div class="gallery-img"><img src="images/mav5.jpeg"></div>
+           <div class="gallery-img"><img src="images/mav6.jpeg"></div>
+           <div class="gallery-img"><img src="images/mav7.jpeg"></div>
+           <div class="gallery-img"><img src="images/mav8.jpeg"></div>
+           <div class="gallery-img"><img src="images/mav9.webp"></div>
+           <div class="gallery-img"><img src="images/mav10.jpeg"></div>
+           <div class="gallery-img"><img src="images/mav11.webp"></div>
+           <div class="gallery-img"><img src="images/mav12.webp"></div>
+           <div class="gallery-img"><img src="images/mav13.webp"></div>
+           <div class="gallery-img"><img src="images/mav14.webp"></div>
+           <div class="gallery-img"><img src="images/mav15.webp"></div>
+           <div class="gallery-img"><img src="images/mav16.webp"></div>
+           <div class="gallery-img"><img src="images/mav17.webp"></div>
+           <div class="gallery-img"><img src="images/mav18.webp"></div>
+           <div class="gallery-img"><img src="images/mav19.webp"></div>
+           <div class="gallery-img"><img src="images/mav20.webp"></div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $('.black').on({
+                'click':function(){
+                    $('#change').attr('src','images/mavrickgray.png');
+                }
+            });
+            $('.gray').on({
+                'click':function(){
+                    $('#change').attr('src','images/mavrickblack.png');
+                }
+            });
+            $('.yellow').on({
+                'click':function(){
+                    $('#change').attr('src','images/destiny.jpg');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

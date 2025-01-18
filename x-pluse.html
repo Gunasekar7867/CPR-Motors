@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(41, 39, 39);
+            padding: 5px 5%;
+        }
+        .home{
+            /* width: 100%; */
+            /* width: 100%; */
+            /* background-color: rgb(9, 228, 199); */
+            color: white;
+            font-size: 35px;
+            /* padding: 5px 5%; */
+            line-height: 50px;
+        }
+        .home{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+        }
+        .color-img img{
+            height: 550px;
+            width: 550px;
+        }
+        .button{
+            margin-left: 240px;  
+        }
+        .text{
+            font-weight: 200;
+        }
+       button{
+        height: 30px;
+        width: 30px;
+        border-radius: 40%;
+        border: none;
+       }
+       .black{
+        background-color: black;
+       }
+       .blue{
+        background-color: blue;
+       }
+       .red{
+        background-color: red;
+       }
+       h2{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+       }
+      table{
+        color: white;
+        font-size: 30px;
+        /* width: 500px; */
+        height: 70px;
+        border:  solid rgb(240, 221, 221);
+        /* width: 40px; */
+      }
+       th{
+        width: 500px;
+        height: 50px;
+        text-align: left;
+       }
+       td{
+        height: 50px;
+         width: 500px;
+       }
+       .img img{
+        display: flex;
+        height: 200px;
+        width: 350px;
+       }
+       .things-grid{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 10px;
+       justify-content: center;
+       /* padding: 5px 2%; */
+       
+       }
+       .things{
+      
+        
+          width: 350px;
+
+        border: 2px solid white;
+       }
+       /* .details p{
+        display: flex;
+        font-size: 20px;
+        color: white;
+       } */
+        p{
+            display: flex;
+            color: white;
+            font-size: 20px;
+        }
+        .gallery-text{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 800;
+
+        }
+        .gallery{
+            justify-content: center;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 5px;
+        }
+        .gallery-img img{
+            /* display: flex; */
+            height: 250px;
+            width: 290px;
+        }
+        .gallery-img img:hover{
+            transform: scale(1.1);
+        }
+       @media (max-width:500px){
+        .home{
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 0; */
+            font-size: 20px;
+        }
+        .color-img img{
+            height: 350px;
+            width: 350px;
+            /* font-size: 10px; */
+        }
+        .button{
+            margin-left: 150px;  
+        }
+        .things-grid{
+            display: flex;
+            flex-wrap: wrap;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="text">
+                <p>
+                    <h1>X PLUSE 4V</h1>
+                    Engine Capacity : 199.6 cc<br>
+                    Mileage : 32.9 kmpl<br>
+                    Transmission : 5 Speed manual<br>
+                    Kerb Weight : 159 kg<br>
+                    Fuel Tank Capacity : 13 litres<br>
+                    Seat Height : 825 mm<br>
+                    Price : 100<br>
+                    <button1 class="buy">Buy Now</button>
+                </p>
+                </div>
+                <div class="color-img">
+                    <img id="change" src="images/xplusered.png">
+                    <div class="button">
+                        <button class="black"></button>
+                        <button class="blue"></button>
+                        <button class="red"></button>
+                    </div>
+                </div>
+    </div>
+    <h2 style="font-size: 50px;">X Pluse 4V Specifications</h2><br>
+         <center>
+        <table border="1" cellspacing="0">
+            <tr>
+                <th>Displacement</th>
+                <td>199.6 cc</td>
+            </tr>
+            <tr>
+                <th>Max Power</th>
+                <td>18.9 bhp @ 8500 rpm</td>
+            </tr>
+            <tr>
+                <th>Max Torque</th>
+                <td>17.35 Nm @ 6500 rpm</td>
+            </tr>
+            <tr>
+                <th>Mileage - Owner Reported</th>
+                <td>40 kmpl</td>
+            </tr>
+            <tr>
+                <th>Gear Shifting Pattern</th>
+                <td>1 Down 4 Up</td>
+            </tr>
+            <tr>
+                <th>Cylinders</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Cooling System</th>
+                <td>Oil Cooled</td>
+            </tr>
+            <tr>
+                <th>Clutch</th>
+                <td>Wet Multiplate</td>
+            </tr>
+            <tr>
+                <th>Fuel Tank Capacity</th>
+                <td>13 litres</td>
+            </tr>
+            <tr>
+                <th>Reserve Fuel Capacity</th>
+                <td>2.6 litres</td>
+            </tr>
+            <tr>
+                <th>Emission Standard</th>
+                <td>BS6 Phase 2</td>
+            </tr>
+            <tr>
+                <th>Fuel Type</th>
+                <td>Petrol</td>
+            </tr>
+        </table>   
+        </center><br><br><br>
+        <h2 style="font-size: 50px;">3 Things to Know About X Pluse 4V</h2>
+        <div class="things-grid">
+        <div class="things">
+            <div class="img">
+              <img src="images/xplusethings1.webp" alt="">
+            </div>
+            <div class="detalis">
+              <p>The presence of good ground clearance is good for some great off-road riding</p>
+            </div>
+          </div>
+          <div class="things">
+            <div class="img">
+              <img src="images/xplusethings2.webp" alt="">
+            </div>
+            <div class="detalis">
+              <p>The large suspension travel allows rider to go over big obstacles</p>
+            </div>
+          </div>
+          <div class="things">
+            <div class="img">
+              <img src="images/xplusethings3.webp" alt="">
+            </div>
+            <div class="detalis">
+              <p>The comfortable seating triangle is perfect for city and highway riding</p>
+            </div>
+          </div>
+          </div><br><br><br><br><br>
+          <h1 class="gallery-text">GALLERY</h1>
+        <div class="gallery">
+          <div class="gallery-img"><img src="images/x+1.webp"></div>  
+          <div class="gallery-img"><img src="images/x+2.webp"></div>  
+          <div class="gallery-img"><img src="images/x+3.webp"></div>  
+          <div class="gallery-img"><img src="images/x+4.webp"></div>  
+          <div class="gallery-img"><img src="images/x+5.webp"></div>  
+          <div class="gallery-img"><img src="images/x+6.webp"></div>  
+          <div class="gallery-img"><img src="images/x+7.webp"></div>  
+          <div class="gallery-img"><img src="images/x+8.webp"></div>  
+          <div class="gallery-img"><img src="images/x+9.webp"></div>  
+          <div class="gallery-img"><img src="images/x+10.webp"></div>  
+          <div class="gallery-img"><img src="images/x+11.webp"></div>  
+          <div class="gallery-img"><img src="images/x+12.webp"></div>  
+          <div class="gallery-img"><img src="images/x+13.webp"></div>  
+          <div class="gallery-img"><img src="images/x+14.webp"></div>  
+          <div class="gallery-img"><img src="images/x+15.webp"></div>  
+          <div class="gallery-img"><img src="images/x+16.webp"></div>  
+          <div class="gallery-img"><img src="images/x+17.webp"></div>  
+          <div class="gallery-img"><img src="images/x+18.webp"></div>  
+          <div class="gallery-img"><img src="images/x+19.webp"></div>  
+          <div class="gallery-img"><img src="images/x+20.webp"></div>  
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $('.black').on({
+                'click':function(){
+                    $('#change').attr('src','images/xpluseblack.png');
+                }
+            });
+            $('.blue').on({
+                'click':function(){
+                    $('#change').attr('src','images/xpluseblue.png');
+                }
+            });
+            $('.red').on({
+                'click':function(){
+                    $('#change').attr('src','images/xplusered.png');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

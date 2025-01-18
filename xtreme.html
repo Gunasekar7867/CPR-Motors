@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(41, 39, 39);
+            padding: 5px 5%;
+        }
+        .home{
+            /* width: 100%; */
+            /* width: 100%; */
+            /* background-color: rgb(9, 228, 199); */
+            color: white;
+            font-size: 35px;
+            /* padding: 5px 5%; */
+            line-height: 50px;
+        }
+        .home{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+        }
+        .color-img img{
+            height: 550px;
+            width: 650px;
+        }
+        .button{
+            margin-left: 240px;  
+        }
+        .text{
+            font-weight: 200;
+        }
+       button{
+        height: 30px;
+        width: 30px;
+        border-radius: 40%;
+        border: none;
+       }
+       .black{
+        background-color: black;
+       }
+       .gray{
+        background-color: gray;
+       }
+       h2{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+       }
+      table{
+        color: white;
+        font-size: 30px;
+        /* width: 500px; */
+        height: 70px;
+        border:  solid rgb(240, 221, 221);
+        /* width: 40px; */
+      }
+       th{
+        width: 500px;
+        height: 50px;
+        text-align: left;
+       }
+       td{
+        height: 50px;
+         width: 500px;
+       }
+       .img img{
+        display: flex;
+        height: 200px;
+        width: 350px;
+       }
+       .things-grid{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 10px;
+       justify-content: center;
+       /* padding: 5px 2%; */
+       
+       }
+       .things{
+      
+        
+          width: 350px;
+
+        border: 2px solid white;
+       }
+       /* .details p{
+        display: flex;
+        font-size: 20px;
+        color: white;
+       } */
+        p{
+            display: flex;
+            color: white;
+            font-size: 20px;
+        }
+        .gallery-text{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 800;
+
+        }
+        .gallery{
+            justify-content: center;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 5px;
+        }
+        .gallery-img img{
+            /* display: flex; */
+            height: 250px;
+            width: 290px;
+        }
+        .gallery-img img:hover{
+            transform: scale(1.1);
+        }
+       @media (max-width:500px){
+        .home{
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 0; */
+            font-size: 20px;
+        }
+        .color-img img{
+            height: 350px;
+            width: 350px;
+            /* font-size: 10px; */
+        }
+        .button{
+            margin-left: 150px;  
+        }
+        .things-grid{
+            display: flex;
+            flex-wrap: wrap;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="text">
+                <p>
+                    <h1>XTREME 160R</h1>
+                    Engine Capacity : 163.2 cc<br>
+                    Mileage : 49.65 kmpl<br>
+                    Transmission : 5 Speed manual<br>
+                    Kerb Weight : 139.5 kg<br>
+                    Fuel Tank Capacity : 12 litres<br>
+                    Seat Height : 790 mm<br>
+                    Price : 100<br>
+                    <button1 class="buy">Buy Now</button>
+                </p>
+                </div>
+                <div class="color-img">
+                    <img id="change" src="images/xtremered.png">
+                    <div class="button">
+                        <button class="black"></button>
+                        <button class="gray"></button>
+                    </div>
+                </div>
+    </div>
+    <h2 style="font-size: 50px;">Xtreme 160R Specifications</h2><br>
+         <center>
+        <table border="1" cellspacing="0">
+            <tr>
+                <th>Displacement</th>
+                <td>163.2 cc</td>
+            </tr>
+            <tr>
+                <th>Max Power<images//th>
+                <td>14.79 bhp @ 8500 rpm</td>
+            </tr>
+            <tr>
+                <th>Max Torque</th>
+                <td>14 Nm @ 6500 rpm</td>
+            </tr>
+            <tr>
+                <th>Mileage - Owner Reported</th>
+                <td>47.5 kmpl</td>
+            </tr>
+            <tr>
+                <th>Gear Shifting Pattern</th>
+                <td>1 Down 4 Up</td>
+            </tr>
+            <tr>
+                <th>Cylinders</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Cooling System</th>
+                <td>Air Cooled</td>
+            </tr>
+            <tr>
+                <th>Clutch</th>
+                <td>Wet Multiplate</td>
+            </tr>
+            <tr>
+                <th>Fuel Tank Capacity</th>
+                <td>12 litres</td>
+            </tr>
+            <tr>
+                <th>Reserve Fuel Capacity</th>
+                <td>1.9 litres</td>
+            </tr>
+            <tr>
+                <th>Emission Standard</th>
+                <td>BS6 Phase 2</td>
+            </tr>
+            <tr>
+                <th>Fuel Type</th>
+                <td>Petrol</td>
+            </tr>
+        </table>   
+        </center><br><br><br>
+          <h1 class="gallery-text">GALLERY</h1>
+        <div class="gallery">
+          <div class="gallery-img"><img src="images/xt1.webp"></div>
+          <div class="gallery-img"><img src="images/xt2.webp"></div>
+          <div class="gallery-img"><img src="images/xt3.webp"></div>
+          <div class="gallery-img"><img src="images/xt4.webp"></div>
+          <div class="gallery-img"><img src="images/xt5.webp"></div>
+          <div class="gallery-img"><img src="images/xt6.webp"></div>
+          <div class="gallery-img"><img src="images/xt7.webp"></div>
+          <div class="gallery-img"><img src="images/xt8.webp"></div>
+          <div class="gallery-img"><img src="images/xt9.webp"></div>
+          <div class="gallery-img"><img src="images/xt10.webp"></div>
+          <div class="gallery-img"><img src="images/xt11.webp"></div>
+          <div class="gallery-img"><img src="images/xt12.webp"></div>
+          <div class="gallery-img"><img src="images/xt13.webp"></div>
+          <div class="gallery-img"><img src="images/xt14.webp"></div>
+          <div class="gallery-img"><img src="images/xt15.webp"></div>
+          <div class="gallery-img"><img src="images/xt16.webp"></div>
+          <div class="gallery-img"><img src="images/xt17.webp"></div>
+          <div class="gallery-img"><img src="images/xt18.webp"></div>
+          <div class="gallery-img"><img src="images/xt19.webp"></div>
+          <div class="gallery-img"><img src="images/xt20.webp"></div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $('.black').on({
+                'click':function(){
+                    $('#change').attr('src','images/xtremeblack.png');
+                }
+            });
+            $('.gray').on({
+                'click':function(){
+                    $('#change').attr('src','images/xtremered.png');
+                }
+            });
+            $('.yellow').on({
+                'click':function(){
+                    $('#change').attr('src','images/destiny.jpg');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

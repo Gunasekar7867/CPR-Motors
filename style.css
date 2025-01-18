@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+nav{
+    background-color: rgb(205, 191, 191);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;  
+}
+
+.logo p{
+    color: red;
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+    bottom: 70px;
+    /* right: 100px; */
+}
+.logo img{
+    position: relative;
+    right: 50px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+}
+nav ul{
+    font-size:30px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+li a:hover{
+    color: red;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 30px;
+}
+@media (max-width:500px){
+    nav ul{
+        position: absolute;
+        top: 40px;
+        left: 6px;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background:rgb(179, 103, 165);
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    .homeimg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+.last{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+.latest-name{
+    font-size: 80px;
+    /* font-weight: 700; */
+    text-align: center;
+}
+.homeimg img{
+    padding: 6px 2%;
+    width: 100%;
+    height: 650px;
+    border-radius: 50px;
+}
+.motorcycle{
+    padding: 10px 4%;
+}
+.latest-bike {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.bike-name{
+    font-size: 30px;
+}
+.star{
+    font-size: 30px;
+    color: red;
+}
+.buy{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.trend{
+    background-color: white;
+    width:300px;
+    height: 450px;
+    text-align: center;
+    border-radius: 10%;
+    border: 3px solid rgb(21, 6, 6);
+}
+.trend-img img{
+    height: 250px;
+    width: 230px;
+    position: relative;
+    right: 15px;
+}
+.motorcycle-heading{
+    font-size: 70px;
+    text-align: center;
+}
+.grid{
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;  */
+    /* display: inline-block;
+    margin: 10px; 
+    padding: 10px 2%;  */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+} 
+
+.img img{
+    height: 250px;
+    width: 230px;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+.box{
+    background-color: white;
+    width:280px;
+    text-align: center;
+    height: 450px;
+    border-radius: 10%;
+    border: 3px solid rgb(21, 6, 6);
+}
+.detalis{
+   position: relative;
+   /* bottom: 50px; */
+}
+.scooter-heading{
+    font-size: 80px;
+    text-align: center;
+}
+.scooter-main{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.rate{
+    position: relative;
+    bottom: 30px;
+}
+.star1{
+    font-size: 30px;
+    color: red;
+    position: relative;
+    bottom: 13px;
+}
+.buy1{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+}
+.scooty{
+    background-color: white;
+    width:280px;
+    height: 450px;
+    border-radius: 10%;
+    text-align: center;
+    border: 3px solid rgb(21, 6, 6);
+}
+.scooty-img img{
+    height: 250px;
+    width: 230px;
+}
+.order-heading{
+    font-size: 70px;
+    text-align: center;
+}
+.order{
+    justify-content: center;
+    padding: 10px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 40px;   
+}
+.number{
+    text-align: center;
+}
+.order-img img{
+    display: flex;
+    height: 230px;
+    width: 230px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.bi-align-end{
+    color: red;
+}
+.buy-text{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold; 
+}
+.buy-text1{
+    font-size: 18px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.last{
+    padding: 10px 5%;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap: 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+}
+.cprfoot{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+}
+.address{
+    font-size: 27px;
+}
+.text1{
+    /* justify-content: center; */
+    text-align: center;
+}
+.text2{
+    justify-content: center;
+    /* text-align: center; */
+}
+.links{
+    font-size: 40px;
+    color: white;
+}
+.sub-link a{
+    /* text-decoration: none; */
+    color: white;
+}
+.enquiry{
+    font-size: 40px;
+}
+input{
+    border-radius: 10px;
+}
+.sub{
+    width: 100px;
+    background-color: red;
+    color:  white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.copy{
+    font-size: 20px;
+    text-align: center;
+}
